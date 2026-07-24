@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { LogoOnly } from "@/components/ui/Logo";
 
 /**
  * Scene "desk" premium construite en CSS/SVG (aucune image IA).
@@ -49,31 +50,23 @@ export function HeroMockup() {
       <div className="absolute left-1/2 top-[14%] w-[74%] -translate-x-1/2">
         {/* Ecran */}
         <div className="rounded-[1.1rem] border-[6px] border-[#1b1b1f] bg-[#1b1b1f] shadow-card">
-          <div className="relative aspect-[16/10] overflow-hidden rounded-md bg-white">
-            {/* Contenu de l'ecran : logo Bethel Digital */}
-            <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-gradient-to-br from-white to-surface">
-              <div className="grid h-14 w-14 place-items-center rounded-2xl bg-brand text-white shadow-[0_10px_24px_-8px_rgba(90,140,255,0.7)]">
-                <svg viewBox="0 0 24 24" className="h-8 w-8" fill="none">
-                  <path
-                    d="M7 4v16M7 12a5 5 0 1 1 0 .001"
-                    stroke="currentColor"
-                    strokeWidth="2.4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-              <div className="text-center">
-                <p className="font-display text-lg font-bold tracking-tight text-ink">
-                  Bethel<span className="text-brand">Digital</span>
+          <div className="relative aspect-[16/10] overflow-hidden rounded-md bg-[#0E1526]">
+            {/* Contenu de l'ecran : logo Bethel Digital (sur fond fonce) */}
+            <div className="flex h-full w-full flex-col items-center justify-center gap-3">
+              {/* halo derriere le logo */}
+              <div className="pointer-events-none absolute left-1/2 top-1/2 h-32 w-32 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand/20 blur-2xl" />
+              <LogoOnly className="relative h-16 w-16" />
+              <div className="relative text-center">
+                <p className="font-display text-lg font-bold tracking-tight text-white">
+                  Bethel<span className="text-brand-300">Digital</span>
                 </p>
-                <p className="text-[10px] font-medium tracking-wide text-ink/50">
+                <p className="text-[10px] font-medium tracking-wide text-white/50">
                   Identite visuelle &amp; Branding
                 </p>
               </div>
             </div>
             {/* Reflet */}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-transparent via-white/0 to-white/40" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-transparent via-white/0 to-white/10" />
           </div>
         </div>
         {/* Base */}

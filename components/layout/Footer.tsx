@@ -10,13 +10,13 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-line bg-surface">
+    <footer className="bg-[#0E1526] text-white">
       <div className="container-x py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           {/* Marque + newsletter */}
           <div>
-            <Logo />
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink/55">
+            <Logo onDark />
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/55">
               Aider les marques a se demarquer grace a des identites visuelles
               creatives, coherentes et performantes.
             </p>
@@ -30,17 +30,17 @@ export function Footer() {
               }}
               className="mt-7"
             >
-              <label className="text-xs font-semibold uppercase tracking-wider text-ink/50">
+              <label className="text-xs font-semibold uppercase tracking-wider text-white/50">
                 Restez inspire
               </label>
-              <div className="mt-2 flex items-center gap-2 rounded-full border border-line bg-white p-1.5 pl-4 focus-within:border-brand">
+              <div className="mt-2 flex items-center gap-2 rounded-full border border-white/15 bg-white/5 p-1.5 pl-4 focus-within:border-brand">
                 <input
                   type="email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Votre email"
-                  className="flex-1 bg-transparent text-sm text-ink placeholder:text-ink/35 outline-none"
+                  className="flex-1 bg-transparent text-sm text-white placeholder:text-white/35 outline-none"
                 />
                 <button
                   type="submit"
@@ -55,11 +55,11 @@ export function Footer() {
 
           {/* Navigation */}
           <div>
-            <h4 className="text-sm font-bold text-ink">Navigation</h4>
+            <h4 className="text-sm font-bold text-white">Navigation</h4>
             <ul className="mt-4 space-y-3">
               {navLinks.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="text-sm text-ink/55 transition-colors hover:text-brand">
+                  <a href={l.href} className="text-sm text-white/55 transition-colors hover:text-brand-300">
                     {l.label}
                   </a>
                 </li>
@@ -69,11 +69,11 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-sm font-bold text-ink">Services</h4>
+            <h4 className="text-sm font-bold text-white">Services</h4>
             <ul className="mt-4 space-y-3">
               {services.slice(0, 6).map((s) => (
                 <li key={s.title}>
-                  <a href="#services" className="text-sm text-ink/55 transition-colors hover:text-brand">
+                  <a href="#services" className="text-sm text-white/55 transition-colors hover:text-brand-300">
                     {s.title}
                   </a>
                 </li>
@@ -83,15 +83,15 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-bold text-ink">Contact</h4>
-            <ul className="mt-4 space-y-3 text-sm text-ink/55">
+            <h4 className="text-sm font-bold text-white">Contact</h4>
+            <ul className="mt-4 space-y-3 text-sm text-white/55">
               <li>
-                <a href={`mailto:${site.email}`} className="hover:text-brand">
+                <a href={`mailto:${site.email}`} className="hover:text-brand-300">
                   {site.email}
                 </a>
               </li>
               <li>
-                <a href={`tel:${site.phone}`} className="hover:text-brand">
+                <a href={`tel:${site.phone}`} className="hover:text-brand-300">
                   {site.phone}
                 </a>
               </li>
@@ -111,7 +111,7 @@ export function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={label}
-                  className="grid h-10 w-10 place-items-center rounded-xl border border-line bg-white text-ink/60 transition-all hover:border-brand hover:text-brand"
+                  className="grid h-10 w-10 place-items-center rounded-xl border border-white/15 bg-white/5 text-white/70 transition-all hover:border-brand hover:text-brand-300"
                 >
                   <Icon className="h-4.5 w-4.5" />
                 </a>
@@ -120,12 +120,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-line pt-7 text-sm text-ink/45 sm:flex-row">
+        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-7 text-sm text-white/45 sm:flex-row">
           <p>
             &copy; {year} {site.name}. Tous droits reserves.
           </p>
           <p>
-            Concu avec soin par <span className="font-medium text-ink/70">{site.founder}</span>.
+            Concu avec soin par <span className="font-medium text-white/70">{site.founder}</span>.
           </p>
         </div>
       </div>

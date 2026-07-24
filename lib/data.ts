@@ -2,6 +2,7 @@
  * Donnees centralisees du site Bethel Digital.
  * Modifie ce fichier pour mettre a jour les contenus, projets et coordonnees.
  */
+import { affiches } from "./affiches";
 
 /* ----------------------------- Coordonnees ----------------------------- */
 export const site = {
@@ -169,26 +170,14 @@ export type Project = {
   ratio: "tall" | "wide" | "square"; // pour la disposition masonry
 };
 
-export const portfolioFilters = [
-  "Tous",
-  "Branding",
-  "Logo",
-  "Flyers",
-  "Packaging",
-  "Textile",
-  "Web",
-] as const;
+export const portfolioFilters = ["Tous", "Affiches", "Branding", "Logo"] as const;
 
+// Les affiches sont generees dans lib/affiches.ts a partir de public/work/affiches.
 export const projects: Project[] = [
   { title: "Delta Surveys", category: "Branding", tag: "Identite visuelle", image: "/work/delta.webp", ratio: "tall" },
   { title: "YAM Auto", category: "Logo", tag: "Logo & identite", image: "/work/yamauto.webp", ratio: "square" },
   { title: "AHTS", category: "Branding", tag: "Charte graphique", image: "/work/ahts.webp", ratio: "wide" },
-  { title: "JK Company", category: "Logo", tag: "Logo & identite", image: "/work/jk.jpg", ratio: "square" },
-  { title: "Affiche evenement", category: "Flyers", tag: "Affiche", image: "/work/affiche.jpg", ratio: "tall" },
-  { title: "Packaging cosmetique", category: "Packaging", tag: "Packaging", image: "/work/packaging.jpg", ratio: "square" },
-  { title: "Collection textile", category: "Textile", tag: "Textile", image: "/work/textile.jpg", ratio: "wide" },
-  { title: "Site vitrine", category: "Web", tag: "Web design", image: "/work/web.jpg", ratio: "tall" },
-  { title: "Flyer promotionnel", category: "Flyers", tag: "Flyer", image: "/work/flyer.jpg", ratio: "square" },
+  ...affiches,
 ];
 
 /* ------------------------------ Partenaires ---------------------------- */

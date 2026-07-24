@@ -31,13 +31,13 @@ export function Header() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500",
         scrolled
-          ? "border-b border-line/80 bg-white/80 backdrop-blur-xl"
-          : "border-b border-transparent bg-transparent"
+          ? "border-b border-white/10 bg-[#0E1526]/90 backdrop-blur-xl"
+          : "border-b border-transparent bg-[#0E1526]"
       )}
     >
       <div className="container-x flex h-16 items-center justify-between md:h-20">
         <a href="#accueil" aria-label="Accueil Bethel Digital">
-          <Logo />
+          <Logo onDark />
         </a>
 
         {/* Navigation desktop */}
@@ -46,10 +46,10 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="group relative rounded-full px-4 py-2 text-sm font-medium text-ink/70 transition-colors hover:text-ink"
+              className="group relative rounded-full px-4 py-2 text-sm font-medium text-white/70 transition-colors hover:text-white"
             >
               {link.label}
-              <span className="absolute inset-x-4 -bottom-0.5 h-px scale-x-0 bg-brand transition-transform duration-300 group-hover:scale-x-100" />
+              <span className="absolute inset-x-4 -bottom-0.5 h-px scale-x-0 bg-brand-300 transition-transform duration-300 group-hover:scale-x-100" />
             </a>
           ))}
         </nav>
@@ -63,7 +63,7 @@ export function Header() {
         {/* Bouton menu mobile */}
         <button
           onClick={() => setOpen((v) => !v)}
-          className="grid h-11 w-11 place-items-center rounded-xl border border-line bg-white/70 lg:hidden"
+          className="grid h-11 w-11 place-items-center rounded-xl border border-white/15 bg-white/5 text-white lg:hidden"
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={open}
         >
@@ -79,7 +79,7 @@ export function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25 }}
-            className="border-t border-line bg-white/95 backdrop-blur-xl lg:hidden"
+            className="border-t border-white/10 bg-[#0E1526]/98 backdrop-blur-xl lg:hidden"
           >
             <div className="container-x flex flex-col gap-1 py-4">
               {navLinks.map((link) => (
@@ -87,7 +87,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-xl px-4 py-3 text-base font-medium text-ink/80 transition-colors hover:bg-surface hover:text-ink"
+                  className="rounded-xl px-4 py-3 text-base font-medium text-white/80 transition-colors hover:bg-white/5 hover:text-white"
                 >
                   {link.label}
                 </a>

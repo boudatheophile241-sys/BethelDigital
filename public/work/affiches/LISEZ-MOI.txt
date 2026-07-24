@@ -1,0 +1,19 @@
+TES AFFICHES — Bethel Digital
+=============================
+
+Depose ici tes 20 affiches (JPG de preference). Noms attendus :
+
+  affiche-01.jpg
+  affiche-02.jpg
+  affiche-03.jpg
+  ...
+  affiche-20.jpg
+
+Chaque affiche apparait automatiquement dans le portfolio (filtre "Affiches").
+Tant qu'une affiche est absente, un emplacement elegant s'affiche a sa place.
+
+Astuce : envoie-moi tes affiches dans le chat, je les optimise (elles sont
+souvent lourdes) et je les mets en place aux bons noms.
+
+Pour avoir plus/moins de 20 emplacements : modifie le chiffre "20" dans
+lib/data.ts (tableau `affiches`).
