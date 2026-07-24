@@ -1,0 +1,14 @@
+VISUELS DU PORTFOLIO — Bethel Digital
+=====================================
+
+Depose ici tes vraies realisations (JPG/PNG/WebP). Noms attendus par defaut :
+
+  delta.jpg, yamauto.jpg, ahts.jpg, jk.jpg,
+  affiche.jpg, packaging.jpg, textile.jpg, web.jpg, flyer.jpg
+
+Tant qu'une image est absente, un emplacement elegant s'affiche a sa place.
+
+Pour ajouter/modifier des projets (titre, categorie, image, format) :
+  lib/data.ts  ->  tableau `projects`
+
+Formats disponibles (champ "ratio") : "tall", "wide", "square".

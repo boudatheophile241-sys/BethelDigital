@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Bethel Digital — Base
+   ============================================================ */
+@layer base {
+  :root {
+    --brand: #5a8cff;
+    --ink: #111111;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  /* Lenis gere le scroll : on desactive le smooth natif quand il est actif */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    font-feature-settings: "ss01", "cv01";
+  }
+
+  ::selection {
+    background: rgba(90, 140, 255, 0.22);
+    color: #0e0e0e;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tighter;
+    text-wrap: balance;
+  }
+
+  /* Scrollbar discrete */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d7d7d7;
+    border-radius: 999px;
+    border: 3px solid #fff;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #bcbcbc;
+  }
+}
+
+/* ============================================================
+   Composants utilitaires
+   ============================================================ */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium
+           transition-all duration-300 ease-out will-change-transform;
+  }
+  .btn-primary {
+    @apply btn bg-brand text-white shadow-[0_10px_30px_-8px_rgba(90,140,255,0.6)]
+           hover:-translate-y-0.5 hover:shadow-[0_18px_44px_-10px_rgba(90,140,255,0.7)]
+           active:translate-y-0;
+  }
+  .btn-ghost {
+    @apply btn border border-line bg-white text-ink hover:border-ink/20 hover:-translate-y-0.5;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-600;
+  }
+
+  .card {
+    @apply rounded-3xl border border-line bg-white p-7 shadow-soft transition-all duration-500;
+  }
+
+  /* Texte gradient discret */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(120deg, #5a8cff 0%, #3d6fe6 100%);
+  }
+
+  /* Ligne de degrade decorative */
+  .hairline {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-line to-transparent;
+  }
+}
+
+@layer utilities {
+  .container-x {
+    @apply mx-auto w-full max-w-[1280px] px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Masque de fondu pour les rangees de logos qui defilent */
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Respect des preferences de mouvement reduit */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

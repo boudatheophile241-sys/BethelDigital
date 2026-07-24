@@ -1,0 +1,8 @@
+PHOTOS DES TEMOIGNAGES — Bethel Digital
+=======================================
+
+Depose ici les photos rondes des clients (JPG/PNG carre, ex. 200x200).
+Noms attendus : avatar-1.jpg, avatar-2.jpg, avatar-3.jpg
+
+Sans photo, les initiales du client s'affichent automatiquement.
+Modifie les textes des temoignages dans lib/data.ts -> `testimonials`.

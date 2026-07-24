@@ -1,0 +1,16 @@
+LOGOS PARTENAIRES — Bethel Digital
+===================================
+
+Depose ici les vrais fichiers logos (PNG transparent ou SVG) avec EXACTEMENT ces noms :
+
+  delta-surveys.png   -> logo Delta Surveys
+  yam-auto.png        -> logo YAM Auto
+  ahts.png            -> logo Azaria High Tech Service (AHTS)
+  jk-company.png      -> logo JK Company
+
+Des que les fichiers sont presents, ils s'affichent automatiquement dans la
+section "Ils m'ont fait confiance". En attendant, le site affiche le nom du
+partenaire comme emplacement.
+
+Pour ajouter/retirer un partenaire : modifie le tableau `partners` dans
+  lib/data.ts
