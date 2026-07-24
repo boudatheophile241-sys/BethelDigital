@@ -180,9 +180,9 @@ export const portfolioFilters = [
 ] as const;
 
 export const projects: Project[] = [
-  { title: "Delta Surveys", category: "Branding", tag: "Identite visuelle", image: "/work/delta.jpg", ratio: "tall" },
-  { title: "YAM Auto", category: "Logo", tag: "Logo & identite", image: "/work/yamauto.jpg", ratio: "square" },
-  { title: "AHTS", category: "Branding", tag: "Charte graphique", image: "/work/ahts.jpg", ratio: "wide" },
+  { title: "Delta Surveys", category: "Branding", tag: "Identite visuelle", image: "/work/delta.webp", ratio: "tall" },
+  { title: "YAM Auto", category: "Logo", tag: "Logo & identite", image: "/work/yamauto.webp", ratio: "square" },
+  { title: "AHTS", category: "Branding", tag: "Charte graphique", image: "/work/ahts.webp", ratio: "wide" },
   { title: "JK Company", category: "Logo", tag: "Logo & identite", image: "/work/jk.jpg", ratio: "square" },
   { title: "Affiche evenement", category: "Flyers", tag: "Affiche", image: "/work/affiche.jpg", ratio: "tall" },
   { title: "Packaging cosmetique", category: "Packaging", tag: "Packaging", image: "/work/packaging.jpg", ratio: "square" },
