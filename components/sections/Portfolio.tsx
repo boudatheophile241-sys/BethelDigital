@@ -83,7 +83,7 @@ export function Portfolio() {
                   "shrink-0 rounded-full border px-5 py-2 text-sm font-medium transition-all duration-300",
                   filter === f
                     ? "border-brand bg-brand text-white shadow-[0_8px_20px_-8px_rgba(90,140,255,0.6)]"
-                    : "border-line bg-white text-ink/60 hover:border-ink/20 hover:text-ink"
+                    : "border-line bg-surface text-ink/60 hover:border-white/25 hover:text-ink"
                 )}
               >
                 {f}
@@ -148,12 +148,12 @@ export function Portfolio() {
               exit={{ opacity: 0, scale: 0.94, y: 16 }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-3xl overflow-hidden rounded-3xl bg-white shadow-2xl"
+              className="relative w-full max-w-3xl overflow-hidden rounded-3xl bg-surface shadow-2xl"
             >
               <button
                 onClick={() => setActive(null)}
                 aria-label="Fermer"
-                className="absolute right-4 top-4 z-10 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-ink shadow-soft transition-transform hover:scale-105"
+                className="absolute right-4 top-4 z-10 grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-transform hover:scale-105"
               >
                 <X className="h-5 w-5" />
               </button>

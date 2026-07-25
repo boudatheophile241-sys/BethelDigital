@@ -28,7 +28,7 @@ export function Process() {
           >
             {process.map((item) => (
               <RevealItem key={item.step} className="relative text-center lg:text-left">
-                <div className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl border border-line bg-white font-display text-lg font-bold text-brand shadow-soft lg:mx-0">
+                <div className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl border border-line bg-surface font-display text-lg font-bold text-brand shadow-soft lg:mx-0">
                   {item.step}
                 </div>
                 <h3 className="mt-5 text-lg font-bold tracking-tight text-ink">

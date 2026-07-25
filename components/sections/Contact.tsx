@@ -18,15 +18,15 @@ export function Contact() {
   };
 
   const field =
-    "w-full rounded-xl border border-line bg-surface px-4 py-3 text-sm text-ink placeholder:text-ink/35 outline-none transition-colors focus:border-brand focus:bg-white";
+    "w-full rounded-xl border border-line bg-surface px-4 py-3 text-sm text-ink placeholder:text-ink/35 outline-none transition-colors focus:border-brand focus:bg-[#242424]";
 
   return (
     <section id="contact" className="py-24 md:py-32">
       <div className="container-x">
-        <div className="overflow-hidden rounded-[2.5rem] border border-line bg-white shadow-card">
+        <div className="overflow-hidden rounded-[2.5rem] border border-line bg-surface shadow-card">
           <div className="grid lg:grid-cols-[0.85fr_1.15fr]">
             {/* Colonne infos */}
-            <div className="relative overflow-hidden bg-ink p-8 text-white md:p-11">
+            <div className="relative overflow-hidden bg-black p-8 text-white md:p-11">
               <div className="pointer-events-none absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-brand/30 blur-3xl" />
               <div className="relative">
                 <span className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-200">
@@ -78,7 +78,7 @@ export function Contact() {
                   href={`https://wa.me/${site.whatsapp}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-9 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-medium text-ink transition-transform hover:-translate-y-0.5"
+                  className="mt-9 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-medium text-black transition-transform hover:-translate-y-0.5"
                 >
                   <MessageCircle className="h-4 w-4 text-brand" />
                   Discuter sur WhatsApp

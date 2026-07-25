@@ -31,8 +31,8 @@ export function Header() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500",
         scrolled
-          ? "border-b border-white/10 bg-[#0E1526]/90 backdrop-blur-xl"
-          : "border-b border-transparent bg-[#0E1526]"
+          ? "border-b border-white/10 bg-[#111111]/90 backdrop-blur-xl"
+          : "border-b border-transparent bg-[#111111]"
       )}
     >
       <div className="container-x flex h-16 items-center justify-between md:h-20">
@@ -79,7 +79,7 @@ export function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25 }}
-            className="border-t border-white/10 bg-[#0E1526]/98 backdrop-blur-xl lg:hidden"
+            className="border-t border-white/10 bg-[#111111]/98 backdrop-blur-xl lg:hidden"
           >
             <div className="container-x flex flex-col gap-1 py-4">
               {navLinks.map((link) => (

@@ -50,7 +50,7 @@ export function HeroMockup() {
       <div className="absolute left-1/2 top-[14%] w-[74%] -translate-x-1/2">
         {/* Ecran */}
         <div className="rounded-[1.1rem] border-[6px] border-[#1b1b1f] bg-[#1b1b1f] shadow-card">
-          <div className="relative aspect-[16/10] overflow-hidden rounded-md bg-[#0E1526]">
+          <div className="relative aspect-[16/10] overflow-hidden rounded-md bg-[#111111]">
             {/* Contenu de l'ecran : logo Bethel Digital (sur fond fonce) */}
             <div className="flex h-full w-full flex-col items-center justify-center gap-3">
               {/* halo derriere le logo */}
@@ -84,16 +84,16 @@ export function HeroMockup() {
           className="aspect-[3/4] rounded-lg border border-line bg-white p-2.5 shadow-card"
         >
           {/* Logo sur une pastille foncee (le logo est clair) */}
-          <div className="flex items-center justify-center rounded-md bg-[#0E1526] py-2">
+          <div className="flex items-center justify-center rounded-md bg-[#111111] py-2">
             <LogoOnly className="h-6 w-auto" />
           </div>
           {/* Slogan manuscrit */}
-          <p className="mt-2 text-center font-script text-[13px] font-semibold leading-tight text-ink">
+          <p className="mt-2 text-center font-script text-[13px] font-semibold leading-tight text-[#111111]">
             Créons votre histoire
           </p>
           <div className="mt-2 space-y-1">
-            <div className="h-0.5 w-full rounded bg-line" />
-            <div className="h-0.5 w-4/5 rounded bg-line" />
+            <div className="h-0.5 w-full rounded bg-[#E5E5E5]" />
+            <div className="h-0.5 w-4/5 rounded bg-[#E5E5E5]" />
           </div>
         </div>
       </motion.div>

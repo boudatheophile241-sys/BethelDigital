@@ -15,7 +15,7 @@ function PartnerLogo({ partner }: { partner: Partner }) {
   if (failed) {
     return (
       <div className="flex h-12 items-center justify-center px-4">
-        <span className="font-display text-lg font-bold tracking-tight text-ink/35">
+        <span className="font-display text-lg font-bold tracking-tight text-black/35">
           {partner.name}
         </span>
       </div>
@@ -37,10 +37,10 @@ function PartnerLogo({ partner }: { partner: Partner }) {
 
 export function Partners() {
   return (
-    <section className="border-y border-line bg-white py-14">
+    <section className="border-y border-black/5 bg-mist py-14">
       <div className="container-x">
         <Reveal className="text-center">
-          <p className="text-sm font-medium uppercase tracking-[0.18em] text-ink/40">
+          <p className="text-sm font-medium uppercase tracking-[0.18em] text-black/40">
             Ils m&apos;ont fait confiance
           </p>
         </Reveal>

@@ -29,14 +29,15 @@ const config: Config = {
     },
     extend: {
       colors: {
-        // Fonds
-        canvas: "#FFFFFF",
-        surface: "#F8F9FC",
+        // Fonds (theme sombre)
+        canvas: "#111111", // fond principal (noir profond)
+        surface: "#1A1A1A", // sections / cartes elevees
+        mist: "#F5F5F5", // sections a fond clair (si besoin)
         // Texte
-        ink: "#111111",
+        ink: "#FFFFFF", // texte principal sur fond sombre
         black: "#0E0E0E",
         // Accents
-        sky: "#CFE1FF", // bleu principal (doux)
+        sky: "#C9D9FF", // bleu pastel (titres secondaires, hover)
         brand: {
           DEFAULT: "#5A8CFF", // bleu CTA
           50: "#EEF3FF",
@@ -50,8 +51,8 @@ const config: Config = {
           800: "#233F84",
           900: "#1B305F",
         },
-        beige: "#E9D8BE",
-        line: "#ECECEC",
+        beige: "#F0DFC0", // accent chaud (badges, boutons secondaires)
+        line: "rgba(255,255,255,0.10)", // bordures discretes sur fond sombre
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
@@ -70,7 +71,7 @@ const config: Config = {
       },
       backgroundImage: {
         "grid-faint":
-          "linear-gradient(to right, rgba(17,17,17,0.035) 1px, transparent 1px), linear-gradient(to bottom, rgba(17,17,17,0.035) 1px, transparent 1px)",
+          "linear-gradient(to right, rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.045) 1px, transparent 1px)",
         "brand-gradient": "linear-gradient(135deg, #7FA8FF 0%, #5A8CFF 50%, #3D6FE6 100%)",
       },
       keyframes: {

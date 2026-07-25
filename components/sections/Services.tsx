@@ -31,7 +31,7 @@ export function Services() {
               <motion.article
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-white p-7 shadow-soft transition-shadow duration-500 hover:shadow-card-hover"
+                className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-surface p-7 shadow-soft transition-shadow duration-500 hover:shadow-card-hover"
               >
                 {/* Halo au hover */}
                 <div className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-brand/10 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100" />
