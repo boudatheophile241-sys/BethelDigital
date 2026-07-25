@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Space_Grotesk, Caveat } from "next/font/google";
+import { Inter, Poppins, Caveat } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/data";
 import SmoothScroll from "@/components/providers/SmoothScroll";
@@ -13,9 +13,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-display",
+  weight: ["500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -95,7 +96,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable} ${caveat.variable}`}>
+    <html lang="fr" className={`${inter.variable} ${poppins.variable} ${caveat.variable}`}>
       <body>
         <script
           type="application/ld+json"

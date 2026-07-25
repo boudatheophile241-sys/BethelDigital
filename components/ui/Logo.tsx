@@ -70,7 +70,7 @@ export function Logo({
         <span className="flex flex-col leading-none">
           <span
             className={cn(
-              "font-script text-[22px] font-bold leading-none",
+              "font-display text-lg font-extrabold leading-none tracking-tight",
               onDark ? "text-white" : "text-ink"
             )}
           >

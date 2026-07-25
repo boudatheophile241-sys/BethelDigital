@@ -33,7 +33,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.05 }}
-            className="mt-5 text-[2.7rem] font-bold leading-[1.12] text-ink sm:text-6xl lg:text-[4.3rem]"
+            className="mt-5 text-[2.6rem] font-extrabold leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-[4.1rem]"
           >
             Je transforme vos idées en une{" "}
             <span className="text-gradient">identité visuelle</span> qui se fait
