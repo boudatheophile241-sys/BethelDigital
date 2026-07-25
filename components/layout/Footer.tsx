@@ -5,6 +5,15 @@ import { ArrowRight, Instagram, Linkedin, Facebook } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { navLinks, services, site } from "@/lib/data";
 
+// Icône TikTok (absente de lucide) — SVG inline.
+function TikTok({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden>
+      <path d="M16.5 3c.32 2.1 1.62 3.57 3.5 3.86v2.6c-1.28.12-2.48-.28-3.5-.98v5.72c0 3.2-2.6 5.8-5.8 5.8a5.8 5.8 0 0 1-1-11.51v2.74a3.06 3.06 0 1 0 2.06 2.9V3h2.74z" />
+    </svg>
+  );
+}
+
 export function Footer() {
   const [email, setEmail] = useState("");
   const year = new Date().getFullYear();
@@ -17,8 +26,8 @@ export function Footer() {
           <div>
             <Logo onDark />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/55">
-              Aider les marques a se demarquer grace a des identites visuelles
-              creatives, coherentes et performantes.
+              Aider les marques à se démarquer grâce à des identités visuelles
+              créatives, cohérentes et performantes.
             </p>
 
             <form
@@ -31,7 +40,7 @@ export function Footer() {
               className="mt-7"
             >
               <label className="text-xs font-semibold uppercase tracking-wider text-white/50">
-                Restez inspire
+                Restez inspiré
               </label>
               <div className="mt-2 flex items-center gap-2 rounded-full border border-white/15 bg-white/5 p-1.5 pl-4 focus-within:border-brand">
                 <input
@@ -102,6 +111,7 @@ export function Footer() {
             <div className="mt-5 flex gap-2">
               {[
                 { icon: Instagram, href: site.socials.instagram, label: "Instagram" },
+                { icon: TikTok, href: site.socials.tiktok, label: "TikTok" },
                 { icon: Linkedin, href: site.socials.linkedin, label: "LinkedIn" },
                 { icon: Facebook, href: site.socials.facebook, label: "Facebook" },
               ].map(({ icon: Icon, href, label }) => (
@@ -122,10 +132,10 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-7 text-sm text-white/45 sm:flex-row">
           <p>
-            &copy; {year} {site.name}. Tous droits reserves.
+            &copy; {year} {site.name}. Tous droits réservés.
           </p>
           <p>
-            Concu avec soin par <span className="font-medium text-white/70">{site.founder}</span>.
+            Conçu avec soin par <span className="font-medium text-white/70">{site.founder}</span>.
           </p>
         </div>
       </div>

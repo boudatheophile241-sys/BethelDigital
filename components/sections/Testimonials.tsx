@@ -40,7 +40,7 @@ export function Testimonials() {
     <section className="py-24 md:py-32">
       <div className="container-x">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Temoignages</span>
+          <span className="eyebrow">Témoignages</span>
           <h2 className="mt-4 text-4xl font-bold tracking-tighter text-ink sm:text-5xl">
             Ce qu&apos;ils <span className="text-gradient">disent</span>
           </h2>

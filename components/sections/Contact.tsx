@@ -36,8 +36,8 @@ export function Contact() {
                   Votre marque a une histoire. Faisons-la briller.
                 </h2>
                 <p className="mt-4 text-white/60">
-                  Parlons de votre projet et creons ensemble une identite visuelle
-                  qui fera la difference.
+                  Parlons de votre projet et créons ensemble une identité visuelle
+                  qui fera la différence.
                 </p>
 
                 <ul className="mt-9 space-y-5">
@@ -57,7 +57,7 @@ export function Contact() {
                       <Phone className="h-5 w-5" />
                     </span>
                     <div>
-                      <p className="text-xs text-white/50">Telephone</p>
+                      <p className="text-xs text-white/50">Téléphone</p>
                       <a href={`tel:${site.phone}`} className="text-sm font-medium hover:text-brand-200">
                         {site.phone}
                       </a>
@@ -115,13 +115,13 @@ export function Contact() {
                   </div>
 
                   <div>
-                    <label className="mb-1.5 block text-sm font-medium text-ink">Service souhaite</label>
+                    <label className="mb-1.5 block text-sm font-medium text-ink">Service souhaité</label>
                     <select
                       value={form.service}
                       onChange={(e) => setForm({ ...form, service: e.target.value })}
                       className={field}
                     >
-                      {["Branding", "Logo & Identite", "Packaging", "Impression", "Design graphique", "Site web", "Marketing digital", "SEO"].map(
+                      {["Branding", "Logo & Identité", "Packaging", "Impression", "Design graphique", "Site web", "Marketing digital", "SEO"].map(
                         (s) => (
                           <option key={s}>{s}</option>
                         )
@@ -146,7 +146,7 @@ export function Contact() {
                     <Send className="h-4 w-4" />
                   </button>
                   <p className="text-center text-xs text-ink/40">
-                    Votre demande sera transmise via WhatsApp pour une reponse rapide.
+                    Votre demande sera transmise via WhatsApp pour une réponse rapide.
                   </p>
                 </form>
               </Reveal>

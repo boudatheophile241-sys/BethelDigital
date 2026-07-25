@@ -15,7 +15,7 @@ export function Story() {
             <Reveal>
               <span className="eyebrow">Mon histoire</span>
               <h2 className="mt-4 text-4xl font-bold leading-tight tracking-tighter text-ink sm:text-5xl">
-                Derriere Bethel Digital,
+                Derrière Bethel Digital,
                 <br />
                 il y a un <span className="text-gradient">parcours</span>.
               </h2>
@@ -24,20 +24,20 @@ export function Story() {
             <Reveal delay={0.1}>
               <div className="mt-7 space-y-4 text-lg leading-relaxed text-ink/60">
                 <p>
-                  Je m&apos;appelle <strong className="text-ink">Theophile Bouda</strong>,
-                  etudiant burkinabe venu au Maroc pour poursuivre mes etudes.
+                  Je m&apos;appelle <strong className="text-ink">Théophile Bouda</strong>,
+                  étudiant burkinabè venu au Maroc pour poursuivre mes études.
                 </p>
                 <p>
-                  Pendant mon parcours universitaire, je me suis passionne pour le
-                  design graphique. J&apos;ai commence par des logos, puis des
+                  Pendant mon parcours universitaire, je me suis passionné pour le
+                  design graphique. J&apos;ai commencé par des logos, puis des
                   affiches, puis des packagings.
                 </p>
                 <p>
-                  Petit a petit, des entrepreneurs m&apos;ont fait confiance. Chaque
+                  Petit à petit, des entrepreneurs m&apos;ont fait confiance. Chaque
                   projet m&apos;a permis d&apos;apprendre et de grandir. Bethel Digital
-                  est nee de cette volonte :{" "}
+                  est née de cette volonté :{" "}
                   <strong className="text-ink">
-                    creer des identites visuelles qui racontent une histoire.
+                    créer des identités visuelles qui racontent une histoire.
                   </strong>
                 </p>
               </div>
@@ -53,7 +53,7 @@ export function Story() {
                     Du Burkina Faso au Maroc
                   </p>
                   <p className="text-xs text-ink/50">
-                    Une histoire d&apos;ambition, de travail et de creativite.
+                    Une histoire d&apos;ambition, de travail et de créativité.
                   </p>
                 </div>
               </div>

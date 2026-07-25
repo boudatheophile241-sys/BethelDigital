@@ -81,15 +81,20 @@ export function HeroMockup() {
       >
         <div
           data-slot="carnet"
-          className="aspect-[3/4] rounded-lg border border-line bg-white p-3 shadow-card"
+          className="aspect-[3/4] rounded-lg border border-line bg-white p-2.5 shadow-card"
         >
-          <div className="h-1.5 w-8 rounded-full bg-brand/60" />
-          <div className="mt-3 space-y-1.5">
-            <div className="h-1 w-full rounded bg-line" />
-            <div className="h-1 w-5/6 rounded bg-line" />
-            <div className="h-1 w-4/6 rounded bg-line" />
+          {/* Logo sur une pastille foncee (le logo est clair) */}
+          <div className="flex items-center justify-center rounded-md bg-[#0E1526] py-2">
+            <LogoOnly className="h-6 w-auto" />
           </div>
-          <div className="mt-3 h-8 w-8 rounded-md bg-beige/70" />
+          {/* Slogan manuscrit */}
+          <p className="mt-2 text-center font-script text-[13px] font-semibold leading-tight text-ink">
+            Créons votre histoire
+          </p>
+          <div className="mt-2 space-y-1">
+            <div className="h-0.5 w-full rounded bg-line" />
+            <div className="h-0.5 w-4/5 rounded bg-line" />
+          </div>
         </div>
       </motion.div>
 

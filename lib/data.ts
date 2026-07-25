@@ -1,32 +1,31 @@
 /**
- * Donnees centralisees du site Bethel Digital.
- * Modifie ce fichier pour mettre a jour les contenus, projets et coordonnees.
+ * Données centralisées du site Bethel Digital.
+ * Modifie ce fichier pour mettre à jour les contenus, projets et coordonnées.
  */
 import { affiches } from "./affiches";
 
-/* ----------------------------- Coordonnees ----------------------------- */
+/* ----------------------------- Coordonnées ----------------------------- */
 export const site = {
   name: "Bethel Digital",
-  tagline: "Identite visuelle & Branding",
-  founder: "Theophile Bouda",
-  email: "contact@betheldigital.com",
-  phone: "+212 6 00 00 00 00",
-  whatsapp: "212600000000", // format international sans + ni espaces
+  tagline: "Identité visuelle & Branding",
+  founder: "Théophile Bouda",
+  email: "contact.betheldigital@gmail.com",
+  phone: "+226 56 23 52 02",
+  whatsapp: "22656235202", // format international sans + ni espaces
   location: "Casablanca, Maroc",
   hours: "Lun – Ven : 09h00 – 18h00",
   socials: {
-    instagram: "https://instagram.com/",
-    linkedin: "https://linkedin.com/",
-    behance: "https://behance.net/",
-    facebook: "https://facebook.com/",
-    tiktok: "https://tiktok.com/",
+    instagram: "https://www.instagram.com/bethel.digital_",
+    tiktok: "https://www.tiktok.com/@bethel.digital",
+    linkedin: "https://www.linkedin.com/company/bethel-digital1/",
+    facebook: "https://www.facebook.com/share/1HMt7fDLLA/?mibextid=wwXIfr",
   },
 } as const;
 
 /* ------------------------------ Navigation ----------------------------- */
 export const navLinks = [
   { label: "Accueil", href: "#accueil" },
-  { label: "A propos", href: "#a-propos" },
+  { label: "À propos", href: "#a-propos" },
   { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Processus", href: "#processus" },
@@ -35,7 +34,7 @@ export const navLinks = [
 
 /* ------------------------------ Statistiques --------------------------- */
 export const stats = [
-  { value: 50, suffix: "+", label: "Projets realises" },
+  { value: 50, suffix: "+", label: "Projets réalisés" },
   { value: 20, suffix: "+", label: "Clients satisfaits" },
   { value: 3, suffix: "+", label: "Pays servis" },
   { value: 98, suffix: "%", label: "Taux de satisfaction" },
@@ -43,7 +42,7 @@ export const stats = [
 
 /* -------------------------------- Services ----------------------------- */
 export type Service = {
-  icon: string; // nom d'icone lucide
+  icon: string; // nom d'icône lucide
   title: string;
   description: string;
 };
@@ -52,12 +51,12 @@ export const services: Service[] = [
   {
     icon: "PenTool",
     title: "Branding",
-    description: "Identite visuelle complete, charte graphique et positionnement de marque.",
+    description: "Identité visuelle complète, charte graphique et positionnement de marque.",
   },
   {
     icon: "Shapes",
-    title: "Logo & Identite",
-    description: "Des logos memorables construits sur le sens et la strategie.",
+    title: "Logo & Identité",
+    description: "Des logos mémorables construits sur le sens et la stratégie.",
   },
   {
     icon: "Package",
@@ -67,12 +66,12 @@ export const services: Service[] = [
   {
     icon: "Printer",
     title: "Impression",
-    description: "Affiches, flyers, cartes et supports imprimes de haute qualite.",
+    description: "Affiches, flyers, cartes et supports imprimés de haute qualité.",
   },
   {
     icon: "LayoutTemplate",
     title: "Design graphique",
-    description: "Visuels reseaux sociaux, presentations et supports de communication.",
+    description: "Visuels réseaux sociaux, présentations et supports de communication.",
   },
   {
     icon: "Globe",
@@ -82,12 +81,12 @@ export const services: Service[] = [
   {
     icon: "Megaphone",
     title: "Marketing digital",
-    description: "Strategie de contenu, publicite en ligne et gestion des reseaux.",
+    description: "Stratégie de contenu, publicité en ligne et gestion des réseaux.",
   },
   {
     icon: "Search",
     title: "SEO",
-    description: "Audit, optimisation et referencement naturel pour etre trouve.",
+    description: "Audit, optimisation et référencement naturel pour être trouvé.",
   },
 ];
 
@@ -102,32 +101,32 @@ export const timeline: TimelineItem[] = [
   {
     year: "Origine",
     title: "Burkina Faso",
-    description: "Mes racines, ma motivation. C'est la que tout commence.",
+    description: "Mes racines, ma motivation. C'est là que tout commence.",
   },
   {
-    year: "Depart",
-    title: "Arrivee au Maroc",
-    description: "Un nouveau depart pour poursuivre mes etudes, de nouveaux defis.",
+    year: "Départ",
+    title: "Arrivée au Maroc",
+    description: "Un nouveau départ pour poursuivre mes études, de nouveaux défis.",
   },
   {
-    year: "Declic",
-    title: "Decouverte du design",
+    year: "Déclic",
+    title: "Découverte du design",
     description: "Pendant mon parcours universitaire, une passion devient une obsession.",
   },
   {
-    year: "Debuts",
+    year: "Débuts",
     title: "Premiers clients",
-    description: "Des logos, des affiches, des packagings. Les premieres confiances.",
+    description: "Des logos, des affiches, des packagings. Les premières confiances.",
   },
   {
     year: "Naissance",
-    title: "Creation de Bethel Digital",
-    description: "Une vision claire : creer des marques qui racontent une histoire.",
+    title: "Création de Bethel Digital",
+    description: "Une vision claire : créer des marques qui racontent une histoire.",
   },
   {
     year: "Demain",
-    title: "Aujourd'hui et apres",
-    description: "Objectif : devenir une reference du branding en Afrique.",
+    title: "Aujourd'hui et après",
+    description: "Objectif : devenir une référence du branding en Afrique.",
   },
 ];
 
@@ -135,8 +134,8 @@ export const timeline: TimelineItem[] = [
 export const process = [
   {
     step: "01",
-    title: "Decouverte",
-    description: "On echange sur vos besoins, votre marche et vos objectifs.",
+    title: "Découverte",
+    description: "On échange sur vos besoins, votre marché et vos objectifs.",
   },
   {
     step: "02",
@@ -145,13 +144,13 @@ export const process = [
   },
   {
     step: "03",
-    title: "Creation",
-    description: "Je concois des solutions creatives, uniques et pertinentes.",
+    title: "Création",
+    description: "Je conçois des solutions créatives, uniques et pertinentes.",
   },
   {
     step: "04",
-    title: "Revisions",
-    description: "On ajuste ensemble jusqu'a votre entiere satisfaction.",
+    title: "Révisions",
+    description: "On ajuste ensemble jusqu'à votre entière satisfaction.",
   },
   {
     step: "05",
@@ -163,19 +162,19 @@ export const process = [
 /* ------------------------------ Portfolio ------------------------------ */
 export type Project = {
   title: string;
-  category: string; // doit correspondre a un filtre
-  tag: string; // libelle affiche
-  // Chaque projet est un EMPLACEMENT remplacable : depose ton image dans /public/work/<image>
+  category: string; // doit correspondre à un filtre
+  tag: string; // libellé affiché
+  // Chaque projet est un EMPLACEMENT remplaçable : depose ton image dans /public/work/<image>
   image: string;
   ratio: "tall" | "wide" | "square"; // pour la disposition masonry
 };
 
 export const portfolioFilters = ["Tous", "Affiches", "Branding", "Logo"] as const;
 
-// Les affiches sont generees dans lib/affiches.ts a partir de public/work/affiches.
+// Les affiches sont générées dans lib/affiches.ts à partir de public/work/affiches.
 export const projects: Project[] = [
-  { title: "Delta Surveys", category: "Branding", tag: "Identite visuelle", image: "/work/delta.webp", ratio: "tall" },
-  { title: "YAM Auto", category: "Logo", tag: "Logo & identite", image: "/work/yamauto.webp", ratio: "square" },
+  { title: "Delta Surveys", category: "Branding", tag: "Identité visuelle", image: "/work/delta.webp", ratio: "tall" },
+  { title: "YAM Auto", category: "Logo", tag: "Logo & identité", image: "/work/yamauto.webp", ratio: "square" },
   { title: "AHTS", category: "Branding", tag: "Charte graphique", image: "/work/ahts.webp", ratio: "wide" },
   ...affiches,
 ];
@@ -194,19 +193,19 @@ export const partners: Partner[] = [
   { name: "JK Company", logo: "/partners/jk-company.png" },
 ];
 
-/* ------------------------------ Temoignages ---------------------------- */
+/* ------------------------------ Témoignages ---------------------------- */
 export type Testimonial = {
   quote: string;
   name: string;
   role: string;
-  avatar: string; // /public/testimonials/<image> — emplacement remplacable
+  avatar: string; // /public/testimonials/<image> — emplacement remplaçable
   rating: number;
 };
 
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Un travail exceptionnel. Bethel Digital a compris notre vision et l'a transformee en une identite forte et coherente.",
+      "Un travail exceptionnel. Bethel Digital a compris notre vision et l'a transformée en une identité forte et cohérente.",
     name: "Awa T.",
     role: "Entrepreneure",
     avatar: "/testimonials/avatar-1.jpg",
@@ -214,7 +213,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Professionnel, creatif et vraiment a l'ecoute. Je recommande vivement ses services les yeux fermes.",
+      "Professionnel, créatif et vraiment à l'écoute. Je recommande vivement ses services les yeux fermés.",
     name: "Moctar B.",
     role: "CEO, YAM Auto",
     avatar: "/testimonials/avatar-2.jpg",
@@ -222,9 +221,9 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Respect des delais, qualite au rendez-vous et une communication irreprochable. Merci pour ce serieux !",
+      "Respect des délais, qualité au rendez-vous et une communication irréprochable. Merci pour ce sérieux !",
     name: "Claudia M.",
-    role: "Gerante",
+    role: "Gérante",
     avatar: "/testimonials/avatar-3.jpg",
     rating: 5,
   },

@@ -8,13 +8,13 @@ export function Process() {
     <section id="processus" className="bg-surface py-24 md:py-32">
       <div className="container-x">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Ma methode</span>
+          <span className="eyebrow">Ma méthode</span>
           <h2 className="mt-4 text-4xl font-bold tracking-tighter text-ink sm:text-5xl">
             Un processus <span className="text-gradient">simple et efficace</span>
           </h2>
           <p className="mt-5 text-lg text-ink/55">
-            Une methode claire, en cinq etapes, pour transformer votre idee en une
-            identite visuelle aboutie.
+            Une méthode claire, en cinq étapes, pour transformer votre idée en une
+            identité visuelle aboutie.
           </p>
         </Reveal>
 

@@ -26,7 +26,7 @@ export function Hero() {
             className="eyebrow"
           >
             <Sparkles className="h-3.5 w-3.5" />
-            Creativite • Strategie • Impact
+            Créativité • Stratégie • Impact
           </motion.span>
 
           <motion.h1
@@ -35,8 +35,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.05 }}
             className="mt-5 text-[2.6rem] font-bold leading-[1.03] tracking-tightest text-ink sm:text-6xl lg:text-[4.1rem]"
           >
-            Je transforme vos idees en une{" "}
-            <span className="text-gradient">identite visuelle</span> qui se fait
+            Je transforme vos idées en une{" "}
+            <span className="text-gradient">identité visuelle</span> qui se fait
             remarquer.
           </motion.h1>
 
@@ -46,9 +46,9 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-ink/60"
           >
-            Etudiant burkinabe au Maroc, j&apos;ai fait de ma passion pour le
-            design mon metier. Aujourd&apos;hui, a travers Bethel Digital, je cree
-            des marques qui racontent une histoire et generent de vrais resultats.
+            Étudiant burkinabè au Maroc, j&apos;ai fait de ma passion pour le
+            design mon métier. Aujourd&apos;hui, à travers Bethel Digital, je crée
+            des marques qui racontent une histoire et génèrent de vrais résultats.
           </motion.p>
 
           <motion.div
@@ -58,7 +58,7 @@ export function Hero() {
             className="mt-9 flex flex-wrap items-center gap-3"
           >
             <a href="#portfolio" className="btn-primary">
-              Decouvrir mon travail
+              Découvrir mon travail
               <ArrowRight className="h-4 w-4" />
             </a>
             <a href="#contact" className="btn-ghost">

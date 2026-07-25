@@ -13,12 +13,12 @@ export function Services() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Ce que je fais</span>
           <h2 className="mt-4 text-4xl font-bold tracking-tighter text-ink sm:text-5xl">
-            Des services penses pour <span className="text-gradient">faire grandir</span>{" "}
+            Des services pensés pour <span className="text-gradient">faire grandir</span>{" "}
             votre marque
           </h2>
           <p className="mt-5 text-lg text-ink/55">
-            De la premiere esquisse a la mise en ligne : une gamme complete pour
-            construire une image de marque coherente et memorable.
+            De la première esquisse à la mise en ligne : une gamme complète pour
+            construire une image de marque cohérente et mémorable.
           </p>
         </Reveal>
 

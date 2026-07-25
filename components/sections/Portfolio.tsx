@@ -63,7 +63,7 @@ export function Portfolio() {
           <div className="max-w-2xl">
             <span className="eyebrow">Portfolio</span>
             <h2 className="mt-4 text-4xl font-bold tracking-tighter text-ink sm:text-5xl">
-              Une selection de <span className="text-gradient">realisations</span>
+              Une sélection de <span className="text-gradient">réalisations</span>
             </h2>
             <p className="mt-4 text-lg text-ink/55">
               Chaque projet est une histoire unique. Voici quelques marques que
@@ -166,9 +166,9 @@ export function Portfolio() {
                   {active.title}
                 </h3>
                 <p className="mt-3 text-ink/55">
-                  Etude de cas : contexte, problematique, reflexion, processus
-                  creatif, choix des couleurs et typographies, puis resultats.
-                  Remplace ce texte et l&apos;image par le detail reel du projet.
+                  Étude de cas : contexte, problématique, réflexion, processus
+                  créatif, choix des couleurs et typographies, puis résultats.
+                  Remplace ce texte et l&apos;image par le détail réel du projet.
                 </p>
               </div>
             </motion.div>
