@@ -22,6 +22,23 @@ function Avatar({ t }: { t: Testimonial }) {
       </div>
     );
   }
+  // Avatar = logo (Delta, JK) : fond clair + logo en entier
+  if (t.isLogo) {
+    return (
+      <div className="grid h-12 w-12 place-items-center rounded-full border border-line bg-white p-1.5">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          ref={ref}
+          src={t.avatar}
+          alt={t.name}
+          onError={onError}
+          loading="lazy"
+          className="h-full w-full object-contain"
+        />
+      </div>
+    );
+  }
+
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
@@ -46,7 +63,7 @@ export function Testimonials() {
           </h2>
         </Reveal>
 
-        <RevealGroup className="mt-14 grid gap-5 md:grid-cols-3" stagger={0.1}>
+        <RevealGroup className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" stagger={0.08}>
           {testimonials.map((t) => (
             <RevealItem key={t.name}>
               <figure className="flex h-full flex-col rounded-3xl border border-line bg-white p-7 shadow-soft transition-shadow duration-500 hover:shadow-card">

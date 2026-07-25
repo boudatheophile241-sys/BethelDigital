@@ -200,31 +200,42 @@ export type Testimonial = {
   role: string;
   avatar: string; // /public/testimonials/<image> — emplacement remplaçable
   rating: number;
+  isLogo?: boolean; // avatar = logo (affiché avec fond clair au lieu d'une photo)
 };
 
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Un travail exceptionnel. Bethel Digital a compris notre vision et l'a transformée en une identité forte et cohérente.",
-    name: "Awa T.",
-    role: "Entrepreneure",
-    avatar: "/testimonials/avatar-1.jpg",
+      "Bethel Digital a su traduire notre activité en une identité visuelle claire et professionnelle. Un vrai plaisir de travailler avec Théophile.",
+    name: "Azaf",
+    role: "Azaria High Tech Service (AHTS)",
+    avatar: "/testimonials/azaf.webp",
     rating: 5,
   },
   {
     quote:
-      "Professionnel, créatif et vraiment à l'écoute. Je recommande vivement ses services les yeux fermés.",
-    name: "Moctar B.",
-    role: "CEO, YAM Auto",
-    avatar: "/testimonials/avatar-2.jpg",
+      "Créatif, réactif et vraiment à l'écoute. Nos visuels attirent bien plus l'attention aujourd'hui. Je recommande sans hésiter.",
+    name: "YAM Auto",
+    role: "Vente & location de voitures",
+    avatar: "/testimonials/yamauto.webp",
     rating: 5,
   },
   {
     quote:
-      "Respect des délais, qualité au rendez-vous et une communication irréprochable. Merci pour ce sérieux !",
-    name: "Claudia M.",
-    role: "Gérante",
-    avatar: "/testimonials/avatar-3.jpg",
+      "Un accompagnement sérieux et une identité soignée pour Delta Surveys. Respect des délais et rendu à la hauteur de nos attentes.",
+    name: "Delta Surveys",
+    role: "Topographie & géomètre",
+    avatar: "/partners/delta-surveys.png",
     rating: 5,
+    isLogo: true,
+  },
+  {
+    quote:
+      "Bethel Digital a redonné vie à notre image de marque. Professionnalisme, écoute et créativité étaient au rendez-vous.",
+    name: "JK Company",
+    role: "Multiservices",
+    avatar: "/partners/jk-company.png",
+    rating: 5,
+    isLogo: true,
   },
 ];
