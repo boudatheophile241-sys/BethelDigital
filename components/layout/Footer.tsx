@@ -135,7 +135,7 @@ export function Footer() {
             &copy; {year} {site.name}. Tous droits réservés.
           </p>
           <p>
-            Conçu avec soin par <span className="font-medium text-white/70">{site.founder}</span>.
+            Conçu avec soin par <span className="font-medium text-white/70">{site.founder}</span>, fondateur de Bethel Digital.
           </p>
         </div>
       </div>
