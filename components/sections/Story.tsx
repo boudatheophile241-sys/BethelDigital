@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
+import { Flag } from "@/components/ui/Flag";
 import { timeline } from "@/lib/data";
 
 export function Story() {
@@ -84,8 +85,12 @@ export function Story() {
                   transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
                 >
                   {/* Point */}
-                  <div className="relative z-10 mt-1 grid h-10 w-10 shrink-0 place-items-center rounded-full border border-line bg-surface shadow-soft md:h-12 md:w-12">
-                    <span className="h-3 w-3 rounded-full bg-brand" />
+                  <div className="relative z-10 mt-1 grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-full border border-line bg-surface shadow-soft md:h-12 md:w-12">
+                    {item.flag ? (
+                      <Flag code={item.flag} className="h-full w-full" />
+                    ) : (
+                      <span className="h-3 w-3 rounded-full bg-brand" />
+                    )}
                   </div>
                   {/* Carte */}
                   <div className="flex-1 rounded-2xl border border-line bg-surface p-5 shadow-soft transition-shadow duration-300 hover:shadow-card">

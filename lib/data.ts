@@ -95,6 +95,7 @@ export type TimelineItem = {
   year: string;
   title: string;
   description: string;
+  flag?: "bf" | "ma"; // drapeau affiché dans la timeline (Burkina Faso / Maroc)
 };
 
 export const timeline: TimelineItem[] = [
@@ -102,11 +103,13 @@ export const timeline: TimelineItem[] = [
     year: "Origine",
     title: "Burkina Faso",
     description: "Mes racines, ma motivation. C'est là que tout commence.",
+    flag: "bf",
   },
   {
     year: "Départ",
     title: "Arrivée au Maroc",
     description: "Un nouveau départ pour poursuivre mes études, de nouveaux défis.",
+    flag: "ma",
   },
   {
     year: "Déclic",
@@ -175,7 +178,6 @@ export const portfolioFilters = ["Tous", "Affiches", "Branding", "Logo"] as cons
 export const projects: Project[] = [
   { title: "Delta Surveys", category: "Branding", tag: "Identité visuelle", image: "/work/delta.webp", ratio: "tall" },
   { title: "YAM Auto", category: "Logo", tag: "Logo & identité", image: "/work/yamauto.webp", ratio: "square" },
-  { title: "AHTS", category: "Branding", tag: "Charte graphique", image: "/work/ahts.webp", ratio: "wide" },
   ...affiches,
 ];
 

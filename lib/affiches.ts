@@ -12,13 +12,4 @@ export const affiches: Project[] = [
   { title: "Affiche 07", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-07.webp", ratio: "square" },
   { title: "Affiche 08", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-08.webp", ratio: "square" },
   { title: "Affiche 09", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-09.webp", ratio: "square" },
-  { title: "Affiche 10", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-10.webp", ratio: "square" },
-  { title: "Affiche 11", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-11.webp", ratio: "square" },
-  { title: "Affiche 12", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-12.webp", ratio: "square" },
-  { title: "Affiche 13", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-13.webp", ratio: "square" },
-  { title: "Affiche 14", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-14.webp", ratio: "square" },
-  { title: "Affiche 15", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-15.webp", ratio: "square" },
-  { title: "Affiche 16", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-16.webp", ratio: "square" },
-  { title: "Affiche 17", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-17.webp", ratio: "square" },
-  { title: "Affiche 18", category: "Affiches", tag: "Affiche", image: "/work/affiches/affiche-18.webp", ratio: "square" },
 ];
